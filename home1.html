@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Website</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: bisque;
+        }
+
+
+
+        header {
+            background-color: #15c8e7;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+
+        .center1-align {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .search-input {
+            flex: 1;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .search-button {
+            background-color: #007bff;
+            height: 38px;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        nav {
+            color: #fff;
+            position: relative;
+            /* Changed to relative for responsive positioning */
+            margin-top: 10px;
+            /* Added margin-top for spacing */
+            list-style: none;
+            text-align: center;
+            /* Centered the navigation items */
+        }
+
+        nav a {
+            font-size: larger;
+            text-decoration: none;
+            margin: 0 10px;
+            /* Added margin for spacing */
+            color: #1a2e9b;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .b {
+            border-radius: 100px;
+            color: white;
+            background-color: #15c8e7;
+            height: 50px;
+            width: 150px;
+            margin-top: 10px;
+            /* Added margin-top for spacing */
+        }
+
+        .product img {
+            width: 250px;
+            /* Added to make images responsive */
+            height: 300px;
+            border: 2px solid black;
+        }
+
+        .end {
+            background-color: #333;
+            color: #fff;
+            justify-content: center;
+            text-align: center;
+            padding: 10px 0;
+            display: flex;
+        }
+
+        .burger {
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 3px;
+        }
+
+        .line {
+            width: 33px;
+            background-color: white;
+            height: 4px;
+            margin: 5px 3px;
+        }
+
+        .profile {
+            background-color: #fffd8a;
+            transition: all 0.7s ease-out;
+            height: 250px;
+        }
+
+        .v-class {
+            height: 20px;
+        }
+
+        h3 {
+            color: black;
+        }
+
+        li {
+            color: black;
+        }
+
+        .signout {
+            background-color: #333;
+        }
+
+        .sign {
+            font-size: larger;
+            color: whitesmoke;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .v-class {
+            opacity: 0;
+        }
+
+        
+        .icon {
+           display: flex; 
+        }
+
+        .icon a{
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+            background-color: #ece9e9;
+            box-shadow: 0 0 20px 10px rgb(65, 64, 64);
+            margin: 0 10px;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.5s;
+        }
+
+        .icon .fa-brands{
+           font-size: 25px;
+           line-height: 60px;
+           position: relative;
+           z-index: 10;
+           transition: color 0.5s;
+        }
+        
+        .icon a::after{
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: -90px;
+            left: 0;
+            background: linear-gradient(-45deg,#ed1c94,#ffec17);
+            position: absolute;
+            transition: 0.5s;
+        }
+
+        .icon a:hover::after{
+            top: 0;
+
+        }
+
+        .icon :hover .fa-brands{
+            color: #fff;
+        }
+        .icon :hover{
+            transform: rotate(360deg);
+        }
+
+        /* Media Queries for Responsive Layout */
+        @media (max-width: 768px) {
+            nav {
+                position: static;
+                /* Return to normal position */
+                margin-top: 20px;
+            }
+
+            .product {
+                padding: 10px;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="profile v-class">
+        <ul>
+            <h3>Account</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQLHZh0aF5Og2DF4G19yPVx_QGjXfaBByFZA&usqp=CAU"
+                alt="p">
+            <li>Name:Sayed kaif</li>
+            <li>Email: <a href="#"> nnm22cs159@nmamit.in</a></li>
+        </ul>
+        <div class="signout">
+            <a href="signin.html" class="sign">Sign Out---> </a>
+        </div>
+    </nav>
+    <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <header>
+        <h1>Welcome to Our Clothing Store</h1>
+        <div class="center1-align">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+
+    </header>
+    <nav>
+        <a href="#Home">Home</a>&nbsp;
+        <a href="#product">Products</a>&nbsp;
+        <a href="cart.html">Cart</a>&nbsp;
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="product">
+            <h1 id="Home">SHIRT</h1>
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/f/d/k/39-lysfcslb200304-louis-philippe-original-imagmy4yhxgxvydc.jpeg?q=70"
+                alt="Product 1">
+            <h2>LOUIS PHILIPPE </h2>
+            <p>Men Slim Fit Solid Button Down Collar Casual Shirt</p>
+            <p><strong>₹1,539</strong></p>
+            <button class="b">ADD TO CART</button>
+        </div>
+        <div class="product">
+            <h1 id="product">T-SHIRT</h1>
+            <img src="https://rukminim2.flixcart.com/image/612/612/k30h8y80/sweatshirt/p/h/n/l-ss19-rnhd11-mustard-alan-jones-original-imafm8ryzrzqexe2.jpeg?q=70"
+                alt="Product 2">
+            <h2>Alan Jones </h2>
+            <p>Men Full Sleeve Solid Hooded Sweatshirt</p>
+            <p><strong>₹779</strong></p>
+            <button class="b">ADD TO CART</button>
+        </div>
+    </div>
+    <center>
+        <div class="end">
+            <footer id="contact">
+                <center>______Contact Us______</center>
+                <p>&copy; 2023 Our Clothing Store. All rights reserved.</p>
+                <p>Contact: 0282-2525678</p>
+                <p>Email:clothingstore@gmail.com</p>
+                
+                <div class="icon">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa" ></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa" ></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa" ></i></a>
+                    <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp fa" ></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter fa" ></i></a>
+                </div>
+                
+                <script src="https://kit.fontawesome.com/74289d101a.js" crossorigin="anonymous"></script>
+            </footer>
+        </div>
+        </center>
+    <script>
+        burger = document.querySelector('.burger')
+        profile = document.querySelector('.profile')
+        menu = document.querySelector('.menu')
+
+        burger.addEventListener('click', () => {
+            profile.classList.toggle('v-class');
+            menu.classList.toggle('h-class');
+        })
+    </script>
+</body>
+
+</html>

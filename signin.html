@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #baecea;
+        }
+
+
+        .box {
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+            position: absolute;
+            text-align: center;
+            transform: tranalate(-50%, -50%);
+            background: rgba(253, 253, 251, 0.753);
+        }
+
+        .input-field {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 250px;
+        }
+
+        .submit-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Sign In</h1>
+        <label for="Username">Enter Username:</label>
+        <input type="text" placeholder="Username" class="input-field"><br>
+        <label for="password">Enter Password:</label>
+        <input type="password" placeholder="Password" class="input-field"><br><br>
+        <a href="home1.html"><button type="submit" class="submit-button">Sign In</button></a>
+    </div>
+</body>
+
+</html>

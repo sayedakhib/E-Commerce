@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecom</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: cornsilk;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
+        .home {
+            background-color: rgb(226, 248, 241);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .home img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid azure;
+        }
+
+        .inline-elements {
+            font-size: x-large;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+
+        .center-align button {
+            border-radius: 10px;
+            background-color: #133ab9;
+            color: #fff;
+            height: 40px;
+            width: 90px;
+        }
+
+        .center1-align {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .search-input {
+            flex: 1;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .search-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Navigation Styles */
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        a {
+            font-size: x-large;
+            color: #02005a;
+            text-decoration: none;
+        }
+
+        /* Main Content Styles */
+        .center1-align {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .center1-align h1 {
+            margin-bottom: 10px;
+        }
+
+        .center1-align img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid black;
+        }
+
+        .center1-align p {
+            font-size: large;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .cloth {
+            font-size: xx-large;
+            color: #0077ff;
+        }
+
+        /* Footer Styles */
+        .end {
+            background-color: #333;
+            color: #fff;
+            justify-content: center;
+            text-align: center;
+            padding: 10px 0;
+            display: flex;
+        }
+
+        .icon {
+           display: flex; 
+        }
+
+        .icon a{
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+            background-color: #ece9e9;
+            box-shadow: 0 0 20px 10px rgb(65, 64, 64);
+            margin: 0 10px;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.5s;
+        }
+
+        .icon .fa-brands{
+           font-size: 25px;
+           line-height: 60px;
+           position: relative;
+           z-index: 10;
+           transition: color 0.5s;
+        }
+        
+        .icon a::after{
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: -90px;
+            left: 0;
+            background: linear-gradient(-45deg,#ed1c94,#ffec17);
+            position: absolute;
+            transition: 0.5s;
+        }
+
+        .icon a:hover::after{
+            top: 0;
+
+        }
+
+        .icon :hover .fa-brands{
+            color: #fff;
+        }
+        .icon :hover{
+            transform: rotate(360deg);
+        }
+
+        /* Media Queries for Responsive Layout */
+        @media (max-width: 768px) {
+            .home img {
+                max-width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            ul {
+                display: block;
+                margin-top: 10px;
+            }
+
+            li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .search-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <center class="img"> <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYhjsnVYswblLONzUhzLsgAQotpm24A4v9Cg&usqp=CAU"
+                alt="img" style="height: 100px;"></center>
+
+        <center class="cloth">WELCOME TO CLOTHING STORE</center><br>
+        <div class="center-align">
+            <span class="inline-elements">If already a customer </span>
+            <a href="signin.html" class="s inline-elements"><button>Sign In</button></a>
+        </div>
+        <div class="center1-align">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </div>
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="signup.html">Sign-Up</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul><br>
+
+
+    <center>
+        <h1 id="Home">New Way Of Shopping</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUTK9tGyOCJChHcCivj0Nv8MqUzUq3wGuDkQ&usqp=CAU"
+            alt="st"> <br>
+
+        <p>Here at Clothing Demo Store we pride ourselves on delivering good quality and stylish clothing for men
+            and
+            women.
+            For the last 14 years this is what we’ve been striving for! So that we can offer our customers the best
+            at
+            the
+            best prices, we are partners with several top brands. Our relationship with over 2,500 different
+            European
+            brans
+            allows us to offer our customers items 40 to 70% cheaper than our competitors.</p>
+
+        <p> Clothing Demo Store sells brand-name items for every taste: dresses, jeans, military-style, leather
+            wear…We
+            understand that the key to our success is a happy and satisfied customer. This is why we want your
+            shopping
+            experience on our site to be pleasant and straightforward.</p>
+        <h1>Garaunteed Quality</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRULTYS2BqoRpyMciYQmKJnvTtiD66pp7dzVA&usqp=CAU"
+            alt="c" class="c"> <br>
+        <p>Quality and style are very important to us here at Clothing Demo Store, which is why we dedicate much of
+            our
+            time
+            to finding the right products to offer our customers. We select which items are good quality so you
+            don’t
+            have
+            to!</p>
+
+        <p>With our referral scheme at Clothing Demo Store we constantly reward customer loyalty. And we strive to
+            be a
+            brand that you will be proud to recommend to your friends.</p>
+
+        <p> Want to be in style effortlessly? Look no further. Clothing Demo Store is for you.</p>
+    </center><br>
+    <center>
+    <div class="end">
+        <footer id="contact">
+            <center>______Contact Us______</center>
+            <p>&copy; 2023 Our Clothing Store. All rights reserved.</p>
+            <p>Contact: 0282-2525678</p>
+            <p>Email:clothingstore@gmail.com</p>
+            
+            <div class="icon">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa" ></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa" ></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa" ></i></a>
+                <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp fa" ></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter fa" ></i></a>
+            </div>
+            
+            <script src="https://kit.fontawesome.com/74289d101a.js" crossorigin="anonymous"></script>
+        </footer>
+    </div>
+    </center>
+</body>
+
+</html>
